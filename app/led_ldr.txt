@@ -1,0 +1,31 @@
+
+Mediciones:
+
+- LDR:
+    Iluminado (luz ambiente): 13.78 kΩ
+    Oscuridad: 271.6 kΩ
+    (*el valor en oscuridad resultó muy variable)
+
+- Potenciómetro:
+    Se ajustó en su valor máximo: 9.57 kΩ
+
+
+Descripción de la experiencia:
+
+Se conectó el circuito con el LED, con una resistencia de 120 Ω y el LDR enfrentado al LED. 
+
+El código se ejecutó sin errores y se imprieron por la termina dos columnas de valores en formato entero.
+
+Columnas:
+- Primera columna: Valor leído por el ADC sobre el divisor de tensión formado por el potenciómetro y el LDR, una tensión proporcional a la cantidad de luz que incide sobre el LDR.
+- Segunda columna: Valor del PWM que se aplica al LED, es decir, el nivel de brillo (duty cycle).
+
+Resultados:
+- La primera columna mostraba valores distintos de cero de forma constante, y variaba en función de la luz ambiente o si se tapaba el LDR.
+- La segunda columna se mantenía en cero casi todo el tiempo. 
+Solo al tapar completamente el LDR con la mano, la segunda columna aumentaba a un valor distinto de cero, pero muy bajo.
+Esto implica que el LED solo se activa si la luz que incide en el LDR es suficientemente baja.
+La experiencia podria mejorarse encapsulando el LED y el LDR para que no incida ningun tipo de luz exterior y asi poder observar mejores resultados.
+
+*Datos obtenidos: datos.csv
+*Grafico de ambas curvas: grafico.xlxs
